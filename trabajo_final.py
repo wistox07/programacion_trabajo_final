@@ -22,6 +22,14 @@ def registrar_parte_diario(equipo, fecha, operador, combustible):
     vb_capataz = input("V.B. Capataz: ")
     vb_ing_residente = input("V.B. Ing. Residente: ")
 
+def main():
+    """Permite ingresar los datos del parte diario del martillo demoledor."""
+    print("--- PARTE DIARIO MARTILLO DEMOLEDOR ---")
+    equipo = input("Equipo: ")
+    fecha = input("Fecha: ")
+    operador = input("Operador: ")
+    combustible = input("Combustible: ")
+    registrar_parte_diario(equipo,fecha,operador,combustible)
 
 if __name__ == "__main__":
-    registrar_parte_diario("EQUIPO","2025-01-01","","REGULAR")
+    main()

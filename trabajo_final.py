@@ -21,6 +21,20 @@ def registrar_parte_diario(equipo, fecha, operador, combustible):
     observacion = input("\nObservación: ")
     vb_capataz = input("V.B. Capataz: ")
     vb_ing_residente = input("V.B. Ing. Residente: ")
+    parte_diario = {
+        "Equipo" : equipo,
+        "Fecha": fecha,
+        "Operador": operador,
+        "Combustible": combustible,
+        "Tipo de Equipo": tipo_equipo,
+        "Trabajos Realizados": trabajos,
+        "Observacion": observacion,
+        "V.B. Capataz": vb_capataz,
+        "V.B. Ing. Residente": vb_ing_residente,
+    }
+    print("\n--- Parte Diario Registrado ---")
+    for clave, valor in parte_diario.items():
+        print(f"{clave}: {valor}")
 
 def main():
     """Permite ingresar los datos del parte diario del martillo demoledor."""

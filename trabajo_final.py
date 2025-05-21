@@ -8,6 +8,19 @@ def registrar_parte_diario(equipo, fecha, operador, combustible):
             tipo_equipo = "Alquilado"
         else : 
             print("Por favor , ingrese 'Propio' o 'Alquilado'.")
+    
+    trabajos = []
+    print("\n--- Trabajos Realizados ---")
+    while True:
+        hora = input("Hora (dejar en blanco para finalizar): ")
+        if not hora:
+            break
+        trabajo = input("Trabajo Realizado: ")
+        trabajos.append({"Hora": hora, "Trabajo": trabajo})
+
+    observacion = input("\nObservación: ")
+    vb_capataz = input("V.B. Capataz: ")
+    vb_ing_residente = input("V.B. Ing. Residente: ")
 
 
 if __name__ == "__main__":
